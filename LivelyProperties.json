@@ -1,0 +1,56 @@
+{
+  "animationSpeed": {
+    "type": "slider",
+    "value": 92,
+    "min": 20,
+    "max": 160,
+    "tick": 141,
+    "text": "Animation Speed"
+  },
+  "meshDensity": {
+    "type": "slider",
+    "value": 100,
+    "min": 45,
+    "max": 170,
+    "tick": 126,
+    "text": "Mesh Density"
+  },
+  "glowStrength": {
+    "type": "slider",
+    "value": 92,
+    "min": 25,
+    "max": 160,
+    "tick": 136,
+    "text": "Glow Strength"
+  },
+  "palette": {
+    "type": "dropdown",
+    "value": 0,
+    "text": "Palette",
+    "items": [
+      "Redwood",
+      "Fusion",
+      "Autonomous"
+    ]
+  },
+  "visualMode": {
+    "type": "dropdown",
+    "value": 0,
+    "text": "Visual Mode",
+    "items": [
+      "Mesh",
+      "Data Flow",
+      "AI Agents"
+    ]
+  },
+  "audioReact": {
+    "type": "checkbox",
+    "value": true,
+    "text": "Audio Reactive"
+  },
+  "showHud": {
+    "type": "checkbox",
+    "value": true,
+    "text": "Show On-Screen Controls"
+  }
+}

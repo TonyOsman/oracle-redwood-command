@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="color-scheme" content="dark" />
+    <title>Oracle Redwood Command</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <canvas id="wallpaper" aria-hidden="true"></canvas>
+
+    <main class="hud" id="hud" aria-label="Controles do wallpaper Oracle Redwood">
+      <section class="status-panel" aria-live="polite">
+        <div class="brandline">
+          <span class="brandmark">Redwood</span>
+          <span class="pulse-dot" aria-hidden="true"></span>
+        </div>
+        <h1 id="selectedTitle">Autonomous DB</h1>
+        <p id="selectedMeta">Data core selecionado</p>
+        <div class="metrics" aria-label="Métricas visuais">
+          <span><b id="metricLatency">12</b>ms</span>
+          <span><b id="metricLoad">74</b>%</span>
+          <span><b id="metricPulse">1.0</b>x</span>
+        </div>
+      </section>
+
+      <nav class="tool-rail" aria-label="Modos visuais">
+        <button class="tool active" type="button" data-mode="mesh" aria-label="Modo malha" title="Malha">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M5 7.5 12 4l7 3.5v9L12 20l-7-3.5v-9Z" />
+            <path d="m5 7.5 7 4 7-4M12 20v-8.5" />
+          </svg>
+        </button>
+        <button class="tool" type="button" data-mode="flow" aria-label="Modo fluxo de dados" title="Fluxo">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4 7h8.5a4.5 4.5 0 0 1 0 9H10" />
+            <path d="M9 4 5 7l4 3M15 14l4 3-4 3" />
+          </svg>
+        </button>
+        <button class="tool" type="button" data-mode="agent" aria-label="Modo agentes AI" title="Agentes">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 3v4M12 17v4M4.2 7.5l3.5 2M16.3 14l3.5 2M19.8 7.5l-3.5 2M7.7 14l-3.5 2" />
+            <circle cx="12" cy="12" r="4.5" />
+          </svg>
+        </button>
+        <button class="tool" type="button" id="toggleHud" aria-label="Alternar painel" title="Painel">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4 5h16v14H4zM8 5v14M8 9h12M8 15h12" />
+          </svg>
+        </button>
+      </nav>
+
+      <section class="selector-strip" id="selectorStrip" aria-label="Selecionar camadas">
+        <button type="button" data-select="autonomous-db" class="selected">Autonomous DB</button>
+        <button type="button" data-select="fusion-apps">Fusion Apps</button>
+        <button type="button" data-select="ai-agents">AI Agents</button>
+        <button type="button" data-select="analytics">Analytics</button>
+        <button type="button" data-select="integration">Integration</button>
+        <button type="button" data-select="security">Security</button>
+      </section>
+
+      <label class="intensity-control" aria-label="Intensidade visual">
+        <span>Intensity</span>
+        <input id="intensity" type="range" min="35" max="140" value="92" />
+      </label>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

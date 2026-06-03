@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 270" role="img" aria-label="Oracle Redwood Command wallpaper thumbnail">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#090605"/>
+      <stop offset="0.48" stop-color="#1a0d0a"/>
+      <stop offset="1" stop-color="#070707"/>
+    </linearGradient>
+    <linearGradient id="ribbon" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#c74634" stop-opacity="0"/>
+      <stop offset="0.48" stop-color="#c74634" stop-opacity="0.7"/>
+      <stop offset="0.74" stop-color="#4fc6bd" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#f6a05d" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="7" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="480" height="270" fill="url(#bg)"/>
+  <path d="M0 190 C118 92 235 174 480 52 L480 138 C318 178 160 202 0 252Z" fill="url(#ribbon)" opacity="0.64"/>
+  <g opacity="0.22" stroke="#ffe1d1" stroke-width="1">
+    <path d="M0 161H480"/>
+    <path d="M0 190H480"/>
+    <path d="M0 226H480"/>
+    <path d="M72 161 12 270"/>
+    <path d="M156 161 126 270"/>
+    <path d="M240 161 240 270"/>
+    <path d="M324 161 354 270"/>
+    <path d="M408 161 468 270"/>
+  </g>
+  <g stroke="#ff725c" stroke-width="1.2" opacity="0.6">
+    <path d="M160 126 242 72 338 118 292 188 194 184Z" fill="none"/>
+    <path d="M242 72 292 188"/>
+    <path d="M160 126 338 118"/>
+  </g>
+  <g filter="url(#glow)">
+    <circle cx="242" cy="72" r="22" fill="#2a120f" stroke="#ff725c" stroke-width="2"/>
+    <circle cx="160" cy="126" r="19" fill="#17100f" stroke="#f6a05d" stroke-width="1.6"/>
+    <circle cx="338" cy="118" r="19" fill="#101414" stroke="#4fc6bd" stroke-width="1.6"/>
+    <circle cx="292" cy="188" r="18" fill="#17100f" stroke="#9d7af2" stroke-width="1.6"/>
+    <circle cx="194" cy="184" r="18" fill="#17100f" stroke="#ffd07a" stroke-width="1.6"/>
+  </g>
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <text x="28" y="44" fill="#ff725c" font-size="17" font-weight="700">Redwood</text>
+    <text x="28" y="79" fill="#fff4ee" font-size="30" font-weight="750">Command</text>
+    <text x="28" y="105" fill="#bda59b" font-size="13">interactive live mesh</text>
+  </g>
+</svg>

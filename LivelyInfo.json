@@ -1,0 +1,14 @@
+{
+  "AppVersion": "2.0.7.4",
+  "Title": "Oracle Redwood Command",
+  "Thumbnail": "thumbnail.png",
+  "Preview": "thumbnail.png",
+  "Desc": "Interactive Oracle-themed Redwood live wallpaper with selectable OCI-style nodes, mouse-reactive data mesh, drag interactions, and optional audio response.",
+  "Author": "Codex",
+  "License": "Personal use",
+  "Contact": "",
+  "Type": 1,
+  "Arguments": "--audio --pause-event true",
+  "FileName": "index.html",
+  "IsAbsolutePath": false
+}
